@@ -1,0 +1,54 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 60px 70px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .breadcrum {
+      font-size: 18px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .breadcrum {
+      font-size: 16px;
+    }
+    .breadcrum img {
+      width: 8px;
+      height: 8px;
+      margin: 0 8px;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .breadcrum {
+      font-size: 14px;
+    }
+    .breadcrum img {
+      width: 6px;
+      height: 6px;
+      margin: 0 6px;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575px) {
+    .breadcrum {
+      font-size: 12px;
+    }
+    .breadcrum img {
+      width: 4px;
+      height: 4px;
+      margin: 0 4px;
+    }
+  }

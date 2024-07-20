@@ -1,0 +1,108 @@
+.search-popup {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .search-button {
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .search-popup-content {
+    position: absolute;
+    top: 100%;
+    right: 1px;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius:0 0 20px 20px;
+    padding: 25px;
+    display: none;
+    width: 270px;
+    max-height: max-content;
+  }
+  
+  .search-popup-content.open {
+    display: block;
+  }
+  
+  .search-popup-content form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-popup i{
+    color: black;
+  }
+  .search-popup i:hover{
+    color: rgba(255, 217, 0, 0.651);
+  }
+
+  
+  .search-popup-content input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 20px 20px 5px;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  
+  .search-popup-content button[type="submit"] {
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-popup-content button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  .search-popup-content.clear-search {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .search-popup-content.clear-search:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .search-results li:last-child {
+    border-bottom: none;
+  }
+  
+  .search-results a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .search-results a:hover {
+    color: #444;
+  }

@@ -1,0 +1,35 @@
+.item {
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+.item p {
+  margin: 20px auto;
+  font-size: 18px;
+  
+}
+.item-prices {
+  display: flex;
+  gap: 10px;
+}
+.item-price-new {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.item-price-old {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: 2px line-through;
+  text-decoration-color: gold;
+}
+.item:hover {
+  transform: scale(1.05);
+}
