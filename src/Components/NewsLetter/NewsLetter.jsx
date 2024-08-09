@@ -7,10 +7,6 @@ export default function NewsLetter() {
       <div className="newsletter-text">
         <h1>
           Subscribe To Our Community
-          <i
-            class="fa-solid fa-group-arrows-rotate fa-spin fa-xs"
-            style={{ color: "gold", marginLeft: "15px"}}
-          ></i>
         </h1>
         <p>
           Be the first to get to get the latest updates on our promotion

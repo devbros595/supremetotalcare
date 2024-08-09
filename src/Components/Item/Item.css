@@ -4,6 +4,7 @@
   height: auto;
   padding: 10px;
   transition: 0.4s ease-in-out;
+  margin-bottom: 50px;
 }
 .item img {
   width: 100%;
@@ -32,4 +33,17 @@
 }
 .item:hover {
   transform: scale(1.05);
+}
+@media (max-width: 425.99px) {
+  .item p{
+    font-size: 14px;
+  }
+  .item-price-new {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .item-price-old {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }

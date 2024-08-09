@@ -25,12 +25,13 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="nav-toggle" onClick={() => setShowMenu(!showMenu)}>
-        <i id="toggler" class="fa-solid fa-bars fa-2xl"></i>
+        {showMenu ? (
+          <i id="toggler" class="fa-solid fa-xmark fa-2xl"></i>
+        ) : (
+          <i id="toggler" class="fa-solid fa-bars fa-2xl"></i>
+        )}
       </div>
-      <ul
-        className={`nav-menu ${showMenu ? "show slide-in" : ""}`}
-        
-      >
+      <ul className={`nav-menu ${showMenu ? "show slide-in" : ""}`}>
         <li
           onClick={() => {
             setMenu("shop");
@@ -38,7 +39,7 @@ export default function Navbar() {
           className="nav-item"
         >
           <Link to="/">Shop</Link>
-          {menu === "shop"? <hr /> : <></>}
+          {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -47,7 +48,7 @@ export default function Navbar() {
           className="nav-item"
         >
           <Link to="/fashion">Fashion</Link>
-          {menu === "fashion"? <hr /> : <></>}
+          {menu === "fashion" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -56,7 +57,7 @@ export default function Navbar() {
           className="nav-item"
         >
           <Link to="/skincare">SkinCare</Link>
-          {menu === "skincare"? <hr /> : <></>}
+          {menu === "skincare" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -65,15 +66,34 @@ export default function Navbar() {
           className="nav-item"
         >
           <Link to="/accessories">Accessories</Link>
-          {menu === "accessories"? <hr /> : <></>}
+          {menu === "accessories" ? <hr /> : <></>}
         </li>
+        <div className="nav-login show">
+          {localStorage.getItem("auth-token") ? (
+            <i
+              class="fa-solid fa-right-from-bracket"
+              onClick={() => {
+                localStorage.removeItem("auth-token");
+                window.location.replace("/");
+              }}
+            ></i>
+          ) : (
+            <Link to="/login">
+              <i class="fa-solid fa-user fa-lg"></i>
+              <span>Login/Signup</span>
+            </Link>
+          )}
+        </div>
+        <div className="nav-search show">
+          <SearchPopup />
+        </div>
       </ul>
       <div className="nav-search-cart">
         <div className="nav-search">
           <SearchPopup />
         </div>
         <div className="nav-login">
-          {localStorage.getItem("auth-token")? (
+          {localStorage.getItem("auth-token") ? (
             <i
               class="fa-solid fa-right-from-bracket"
               onClick={() => {

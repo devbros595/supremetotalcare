@@ -3,32 +3,40 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Slide/Slider.css";
-import Slide1 from "../Assets/Slides/slider_1.jpg";
+import 'animate.css';
+import Slide1 from "../Assets/bg.png";
+import Slide2 from "../Assets/fashion.webp";
 
 export default function MyCarousel() {
   const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    fade: false,
+    fade:true,
+    
   };
   return (
     <Slider {...settings}>
-      <div>
-        <img src={Slide1} alt="Image 1" />
-        <div className="slide-text">
-          <h1>
-            GET <em>50%</em> DISCOUNT ON
-            <br /> EXCLUSIVES
+      <div className="slide">
+        <div className="image-container-2">
+          <h1 className="animate__animated animate__slideInLeft ">
+            Shop luxuries at your favourite online
+            <br /> store{" "}
+            <i
+              class="fa-solid fa-bag-shopping fa-fade fa-xs "
+              style={{ color: "#ffffff" }}
+            ></i>
           </h1>
-          <p>
-            Fashion <i class="fa-solid fa-arrow-right fa-flip"></i> SkinCare <i class="fa-solid fa-arrow-right fa-flip"></i> Accessories
-          </p>
+          <img src={Slide2} alt="Image 2" />
+        </div>
+      </div>
+      <div className="slide">
+        <div className="image-container">
+          <h1>Shop quality african fabrics only on STC</h1>
+          <img src={Slide1} alt="Image 1" />
         </div>
       </div>
     </Slider>

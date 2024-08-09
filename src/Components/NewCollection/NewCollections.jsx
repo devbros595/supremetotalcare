@@ -16,7 +16,7 @@ export default function NewCollections() {
   
   return (
     <div className='new-collections'>
-        <h1>LATEST ENTRIES</h1>
+        <h2>LATEST ENTRIES</h2>
         <hr />
         <div className="collections">
             {newCollection.map((item, index) => {

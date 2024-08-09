@@ -17,7 +17,7 @@ export default function Popular() {
 
   return (
     <div className="popular">
-      <h1>TRENDING NOW</h1>
+      <h2>Trending Now</h2>
       <hr />
       <div className="popular-item">
         {dataProduct.map((item, i) => {

@@ -1,0 +1,23 @@
+.terms {
+    border: 1px dashed gold;
+    margin: 10px;
+    padding: 50px 200px;
+}
+.main-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media (max-width: 425.99px) {
+    .terms{
+        padding: 50px 50px;
+    }
+    .main-header h2{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+}

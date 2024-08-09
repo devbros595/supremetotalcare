@@ -1,0 +1,49 @@
+.about-us {
+  background: rgb(247, 247, 247);
+  padding: 30px 30px 0 ;
+}
+h5{
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+p{
+  font-size: 15px;
+}
+li{
+  font-size: 15px;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+}
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-size: 27px;
+
+}
+.sub-main-1 {
+  padding: 30px;
+}
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.about-why-choose-us{
+  margin-top: 50px;
+}
+
+.sub-main-2 {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+@media (max-width: 425.99px) {
+  .about-content{
+    grid-template-columns: 1fr;
+  }
+}

@@ -21,14 +21,13 @@
 
 .newsletter-text {
   flex: 1;
-  
 }
 
 .newsletter-form {
   flex: 1;
   border: none;
   border-bottom: 2px solid white;
-padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 .newsletter-form input {
   outline: none;
@@ -42,18 +41,92 @@ padding-bottom: 5px;
 }
 
 .newsletter-form button {
-    background: white;
-    border: 1px solid black;
-   
-    color: black;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  padding: 3px 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.newsletter-form button:hover {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+  .newsletter-text h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .newsletter-text p {
+    font-size: 14px;
+  }
+  .newsletter-form input {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    width: 70%;
+  }
+  .newsletter-form button {
     padding: 3px 10px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .newsletter{
+    gap: 50px;
+  }
+}
+@media (max-width: 425.99px) {
+  .newsletter-text h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .newsletter-text p {
+    font-size: 14px;
+  }
+  .newsletter-form input {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    width: 65%;
+    margin-right: 10px;
+  }
+  .newsletter-form button {
+    padding: 3px 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .newsletter{
+    flex-direction: column;
+  }
+}
+@media (max-width: 375.99px) {
+  .newsletter-text h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .newsletter-text p {
+    font-size: 14px;
+  }
+  .newsletter-form input {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    width: 62%;
+    margin-right: 10px;
+  }
+  .newsletter-form button {
+    padding: 3px 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .newsletter{
+    flex-direction: column;
   }
 
-  .newsletter-form button:hover{
-    color: white;
-    background: transparent;
-    border: 1px solid white;
-  }
+}

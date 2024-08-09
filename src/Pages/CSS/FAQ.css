@@ -1,0 +1,8 @@
+.faq-container {
+  background: rgb(247, 247, 247);
+  padding: 30px 30px;
+}
+.faq-container h1 {
+  font-size: 27px;
+  text-align: center;
+}

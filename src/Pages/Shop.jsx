@@ -10,7 +10,7 @@ export default function Shop() {
   return (
     <div>
         <MyCarousel/>
-        <ShopByCategory/>
+        {/* <ShopByCategory/> */}
         <Popular/>
         {/* <Offers/> */}
         <NewCollections/>
