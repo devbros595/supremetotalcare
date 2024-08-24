@@ -22,7 +22,7 @@ export default function Footer() {
         <a href="https://www.tiktok.com/@sola_yusuff" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-tiktok fa-lg"></i>
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/Supremetotalcare" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-facebook fa-lg"></i>
         </a>
         <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">

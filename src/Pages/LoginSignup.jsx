@@ -45,7 +45,7 @@ export default function LoginSignup() {
   return (
     <div className="loginsignup">
       <div className="loginsignup-container">
-        <h1>{state}</h1>
+        <h3>{state}</h3>
         <div className="loginsignup-fields">
           {state === "Sign Up" ? (
             <input
@@ -104,10 +104,14 @@ export default function LoginSignup() {
           </p>
         )}
 
-        <div className="loginsignup-agree">
-          <input type="checkbox" name="" id="" />
-          <p>By continuing, i agree to the terms of use and privacy policy.</p>
-        </div>
+        { state === "Sign Up" ? (<div className="loginsignup-agree">
+          <div className="check-box">
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div className="agree">
+            <p>By signing up, you agree to our Terms of Service</p>
+          </div>
+        </div>) : (<></>)}
       </div>
     </div>
   );

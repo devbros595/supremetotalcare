@@ -12,7 +12,7 @@
 }
 .item p {
   margin: 20px auto;
-  font-size: 18px;
+  font-size: 16px;
   
 }
 .item-prices {
@@ -22,14 +22,14 @@
 .item-price-new {
   color: black;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .item-price-old {
   color: black;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: 2px line-through;
-  text-decoration-color: gold;
+  text-decoration-color: black;
 }
 .item:hover {
   transform: scale(1.05);

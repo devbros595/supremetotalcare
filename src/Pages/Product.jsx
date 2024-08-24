@@ -14,7 +14,6 @@ export default function Product() {
     <div className='product'>
       <Breadcrum product={product}/>
       <ProductDisplay product={product}/>
-      <DescriptionBox/>
       <RelatedProducts/>
     </div>
   )

@@ -11,6 +11,13 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
+      <div className="nav-toggle" onClick={() => setShowMenu(!showMenu)}>
+        {showMenu ? (
+          <i id="toggler" class="fa-solid fa-xmark fa-2xl"></i>
+        ) : (
+          <i id="toggler" class="fa-solid fa-bars fa-2xl"></i>
+        )}
+      </div>
       <div className="nav-logo">
         <Link to="/">
           <div className="nav-logo-text">
@@ -23,13 +30,6 @@ export default function Navbar() {
             </h3>
           </div>
         </Link>
-      </div>
-      <div className="nav-toggle" onClick={() => setShowMenu(!showMenu)}>
-        {showMenu ? (
-          <i id="toggler" class="fa-solid fa-xmark fa-2xl"></i>
-        ) : (
-          <i id="toggler" class="fa-solid fa-bars fa-2xl"></i>
-        )}
       </div>
       <ul className={`nav-menu ${showMenu ? "show slide-in" : ""}`}>
         <li

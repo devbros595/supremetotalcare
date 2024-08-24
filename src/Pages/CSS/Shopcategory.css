@@ -1,41 +1,68 @@
-.shopcategory-banner{
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
 }
-.shopcategory-indexsort{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto 100px;
+.shopcategory-indexsort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 100px;
 }
-.shopcategory-sort{
-    padding: 8px 15px;
-    border-radius: 40px;
-    border: 1px solid #888;
+.shopcategory-indexsort p span {
+  font-weight: 600;
 }
-.shopcategory-indexsort p span{
-    font-weight: 600;
+.shopcategory-products {
+  margin: 50px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+  width: 90vw;
 }
-.shopcategory-products{
-    margin: 50px 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
-    width: 90vw;
-    
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
 }
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width: 200px;
-    height: 60px;
-    border-radius: 50px;
-    background: #ededed;
-    color: #787878;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.shopcategory-sort select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.shopcategory-sort button {
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shopcategory-sort button:hover {
+  background-color: #444;
+}
+
+.shopcategory-sort button:active {
+  background-color: #555;
 }

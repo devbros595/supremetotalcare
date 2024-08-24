@@ -14,7 +14,6 @@ export default function MyCarousel() {
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
-    slidesToScroll: 1,
     fade:true,
     
   };
@@ -35,7 +34,7 @@ export default function MyCarousel() {
       </div>
       <div className="slide">
         <div className="image-container">
-          <h1>Shop quality african fabrics only on STC</h1>
+          <h1>Quality african fabrics</h1>
           <img src={Slide1} alt="Image 1" />
         </div>
       </div>
